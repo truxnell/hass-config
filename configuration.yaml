@@ -1,10 +1,27 @@
+---
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+
+  # Internal and external URLs
+  external_url: !secret base_url
+  internal_url: !secret base_url
+
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: !secret time_zone
+  packages: !include_dir_named packages
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-# Text to speech
-tts:
-  - platform: google_translate
+## Includes
+# Aiming to have as much as possible in packages/side yaml for seperation/readability
 
 group: !include groups.yaml
 automation: !include automations.yaml

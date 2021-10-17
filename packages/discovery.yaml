@@ -1,0 +1,11 @@
+---
+##
+## Discovery configuration
+##
+
+# More info
+# https://www.home-assistant.io/integrations/discovery/
+
+discovery:
+  ignore:
+    - yeelight

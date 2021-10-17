@@ -1,0 +1,9 @@
+---
+##
+## Logger configuration
+##
+
+# More Info
+# https://www.home-assistant.io/integrations/logger/
+logger:
+  default: warn

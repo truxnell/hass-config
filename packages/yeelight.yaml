@@ -1,0 +1,12 @@
+---
+##
+## Yeelight configuration
+##
+
+# More info
+# https://www.home-assistant.io/integrations/yeelight/
+
+yeelight:
+  devices:
+    192.168.2.40:
+      name: "Office Yeelight"

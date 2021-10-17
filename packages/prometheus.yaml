@@ -1,0 +1,10 @@
+---
+##
+## Prometheus configuration
+##
+
+# More Info
+# https://www.home-assistant.io/integrations/prometheus/
+
+prometheus:
+  namespace: home

@@ -1,0 +1,21 @@
+---
+##
+## Recorder configuration
+##
+
+# More info
+# https://www.home-assistant.io/integrations/recorder/
+
+recorder:
+  # Database URL for connection
+  db_url: !secret recoder_database_url
+
+  # Auto purge settings
+  auto_purge: true
+  purge_keep_days: 14
+
+  # Included filters
+  # include:
+
+  # Excluded filters
+  # exclude:
