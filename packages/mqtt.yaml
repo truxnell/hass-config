@@ -1,0 +1,13 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://github.com/basnijholt/adaptive-lighting
+
+mqtt:
+  broker: !secret MQTT_BROKER
+  port: 1883
+  username: !secret MQTT_USERNAME
+  password: !secret MQTT_PASSWORD

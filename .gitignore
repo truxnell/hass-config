@@ -27,3 +27,4 @@ entity_registry.yaml
 shell_commands/secrets.sh
 .vim/coc-settings.json
 *.env
+.vscode

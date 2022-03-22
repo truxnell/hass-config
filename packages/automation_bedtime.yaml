@@ -1,0 +1,46 @@
+
+---
+##
+## Adaptive Lighting configurationX
+##
+
+# Ideas from
+# https://github.com/seangreen2/home_assistant/wiki/Easy-Sleep-Mode-with-Home-Assistant
+
+automation:
+- alias: 'Bedtime'
+  # description: 'Turn off study light and close blinds at detecting bedtime'
+  trigger:
+    - type: plugged_in
+      platform: device
+      device_id: a76ef8a0eb20f85bb8f545bdf6e78d2a
+      entity_id: binary_sensor.nat_mi9t_is_charging
+      domain: binary_sensor
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 10
+        milliseconds: 0
+  condition:
+    - type: is_illuminance
+      condition: device
+      device_id: a76ef8a0eb20f85bb8f545bdf6e78d2a
+      entity_id: sensor.nat_mi9t_light_sensor
+      domain: sensor
+      below: 10
+    - condition: time
+      after: '20:00:00'
+      before: '04:00:00'
+    - condition: state
+      entity_id: person.nat
+      state: home
+  action:
+    - service: cover.close_cover
+      target:
+        area_id: living_room
+    - service: light.turn_off
+      data:
+        transition: 1
+      target:
+        area_id: study
+  mode: single

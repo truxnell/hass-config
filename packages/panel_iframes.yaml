@@ -1,0 +1,21 @@
+---
+##
+## Prometheus configuration
+##
+
+# More Info
+# https://www.home-assistant.io/integrations/prometheus/
+
+panel_iframe:
+  ide:
+    title: Config
+    icon: mdi:code-braces
+    url: !secret ide_url
+  nodered:
+    title: Node-RED
+    icon: mdi:sitemap
+    url: !secret node_red_url
+  zigbee2mqtt:
+    title: Zigbee2MQTT
+    icon: mdi:router-wireless-settings
+    url: !secret zigbee2mqtt_url

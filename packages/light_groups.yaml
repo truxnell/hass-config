@@ -1,0 +1,17 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://www.home-assistant.io/integrations/light.group/
+
+
+light:
+  - platform: group
+    name: Study Lights
+    entities:
+      - light.study_light_main
+      - light.wled
+      - light.study_spotlight_left
+

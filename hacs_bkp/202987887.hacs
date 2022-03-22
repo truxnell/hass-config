@@ -1,0 +1,64 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/202987887.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@zachowj"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "main",
+        "description": "Companion Component for node-red-contrib-home-assistant-websocket to help integrate Node-RED with Home Assistant Core",
+        "domain": "nodered",
+        "domains": [
+            "binary_sensor",
+            "sensor",
+            "switch"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"753143d69420e2f79035b42ce5775c9d340844927c00ead34045206797e61d89\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "zachowj/hass-node-red",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "2021.12.0",
+        "id": "202987887",
+        "iot_class": "local_push",
+        "installed": true,
+        "installed_commit": "19642c2",
+        "installed_version": "v0.5.2",
+        "open_issues": 2,
+        "last_commit": "3f9e83b",
+        "last_version": "v1.0.6",
+        "last_updated": "2022-02-04T00:32:32Z",
+        "manifest_name": "Node-RED Companion",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-02-04T00:32:32",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "v1.0.6",
+            "v1.0.5",
+            "v1.0.4",
+            "v1.0.3",
+            "v1.0.2"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 215,
+        "topics": [
+            "home-assistant",
+            "node-red"
+        ],
+        "zip_release": false
+    }
+}

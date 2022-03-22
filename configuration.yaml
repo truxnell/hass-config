@@ -20,6 +20,9 @@ homeassistant:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+# Enable discovery
+discovery:
+
 ## Includes
 # Aiming to have as much as possible in packages/side yaml for seperation/readability
 

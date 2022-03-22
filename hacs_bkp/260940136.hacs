@@ -1,0 +1,59 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/260940136.hacs",
+    "data": {
+        "archived": false,
+        "authors": [],
+        "category": "plugin",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "master",
+        "description": "Weather condition card (Lovelace) for Home Assistant.",
+        "domain": "",
+        "domains": [
+            "weather"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"1f0ed22f5e5ca8f602b48cb7edccaaa67c128390f0510546b540b08e8e73d4a7\"",
+        "file_name": "ha-card-weather-conditions.js",
+        "filename": "ha-card-weather-conditions.js",
+        "first_install": false,
+        "fork": false,
+        "full_name": "r-renato/ha-card-weather-conditions",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "260940136",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "9bb2992",
+        "installed_version": "1.9.12",
+        "open_issues": 47,
+        "last_commit": "9bb2992",
+        "last_version": "1.9.12",
+        "last_updated": "2021-01-29T18:11:03Z",
+        "manifest_name": null,
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-01-29T18:11:03",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "1.9.12"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 88,
+        "topics": [
+            "card",
+            "home-assistant",
+            "home-assistant-hacs",
+            "lovelace",
+            "weather-conditions"
+        ],
+        "zip_release": false
+    }
+}

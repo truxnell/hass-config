@@ -1,0 +1,15 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://www.home-assistant.io/integrations/cover.group/
+
+
+cover:
+  - platform: group
+    name: Lounge Blinds
+    entities:
+      - cover.lounge_door
+      - cover.lounge_fireplace

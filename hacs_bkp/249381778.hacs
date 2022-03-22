@@ -1,0 +1,73 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/249381778.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@rospogrigio",
+            "@postlund"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "local handling for Tuya devices",
+        "domain": "localtuya",
+        "domains": [
+            "climate",
+            "cover",
+            "fan",
+            "light",
+            "number",
+            "select",
+            "sensor",
+            "switch"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"6bd7d936f500658878faff54ffd6e2e6be20e34598f1f53d9b06bd7dd0b96473\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": true,
+        "full_name": "rospogrigio/localtuya",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "0.116.0",
+        "id": "249381778",
+        "iot_class": [
+            "Local Push"
+        ],
+        "installed": true,
+        "installed_commit": "6232762",
+        "installed_version": "v3.2.3",
+        "open_issues": 381,
+        "last_commit": "2688a17",
+        "last_version": "v3.4.0",
+        "last_updated": "2022-01-30T05:29:24Z",
+        "manifest_name": "LocalTuya integration",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-01-30T05:29:24",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "v3.4.0",
+            "v3.3.0",
+            "v3.2.4",
+            "v3.2.3",
+            "v3.2.2"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 922,
+        "topics": [
+            "localtuya",
+            "tuya",
+            "tuya-api"
+        ],
+        "zip_release": false
+    }
+}

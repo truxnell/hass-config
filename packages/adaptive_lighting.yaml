@@ -1,0 +1,33 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://github.com/basnijholt/adaptive-lighting
+
+
+adaptive_lighting:
+- name: "Study Light"
+  lights:
+    - light.study_light_main
+
+  # Minimum values
+  min_brightness: 80
+  min_color_temp: 2800
+
+  # Max Values
+  max_brightness: 100
+  max_color_temp: 5500
+
+- name: "Study Desk"
+  lights:
+    - light.wled
+
+  # Minimum values
+  min_brightness: 5
+  min_color_temp: 2000
+
+  # Max Values
+  max_brightness: 20
+  max_color_temp: 5500

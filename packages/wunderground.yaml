@@ -1,0 +1,61 @@
+---
+##
+## Wunderground PWS configuration
+##
+
+# More info
+# https://github.com/cytech/Home-Assistant-wundergroundpws
+
+
+sensor:
+- platform: wundergroundpws
+  pws_id: !secret pws_id
+  api_key: !secret pws_key
+  numeric_precision: none
+  monitored_conditions:
+    # Measurements
+    - solarRadiation
+    - uv
+    - winddir
+    - humidity
+    - dewpt
+    - heatIndex
+    - windChill
+    - precipTotal
+    - precipRate
+    - pressure
+    - temp
+    - windGust
+    - windSpeed
+
+    # Forecasts
+    - precip_1d
+    - precip_chance_1d
+    - precip_2d
+    - precip_chance_2d
+    - precip_3d
+    - precip_chance_3d
+    - precip_4d
+    - precip_chance_4d
+    - precip_5d
+    - precip_chance_5d
+    - weather_1d
+    - wind_1d
+    - temp_high_1d
+    - temp_low_1d
+    - weather_1n
+    - weather_2d
+    - temp_high_2d
+    - temp_low_2d
+    - wind_2d
+    - weather_2n
+    - weather_3d
+    - wind_3d
+    - temp_high_3d
+    - temp_low_3d
+    - weather_3n
+    - weather_4d
+    - wind_4d
+    - weather_4n
+    - temp_high_4d
+    - temp_low_4d

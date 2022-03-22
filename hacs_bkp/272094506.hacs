@@ -1,0 +1,60 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/272094506.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@mrk-its"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [
+            "PL"
+        ],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "Custom Component for fetching lightning data from blitzortung.org",
+        "domain": "blitzortung",
+        "domains": [
+            "sensor"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"ca08477d37424cca54ba843bdc6f4393b2199c4c994de8a1367bc41fc312e094\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "mrk-its/homeassistant-blitzortung",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "272094506",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "658d9e2",
+        "installed_version": null,
+        "open_issues": 10,
+        "last_commit": "0f05fe0",
+        "last_version": null,
+        "last_updated": "2021-12-15T15:29:15Z",
+        "manifest_name": "Blitzortung",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-12-15T15:29:15",
+        "releases": false,
+        "render_readme": true,
+        "published_tags": [],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 59,
+        "topics": [
+            "blitzortung",
+            "home-assistant",
+            "home-automation",
+            "lightning-network"
+        ],
+        "zip_release": false
+    }
+}

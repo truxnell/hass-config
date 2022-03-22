@@ -1,0 +1,53 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://github.com/basnijholt/nut
+
+# Ideas from https://gist.github.com/MoLow/c0797ca1926e4dfdd60f5c4d0a7a8aec
+
+sensor:
+  - platform: template
+    sensors:  
+      nut_ups_runtime_friendly:
+        friendly_name: 'Time Remaining'
+        value_template: >- 
+          {% set time = (states.sensor.ups_battery_runtime.state | int) | int %}
+          {% set minutes = ((time % 3600) / 60) | int %}
+          {% set hours = ((time % 86400) / 3600) | int %}
+          {% set days = (time / 86400) | int %}
+        
+          {%- if time < 60 -%}
+            Less than a minute
+            {%- else -%}
+            {%- if days > 0 -%}
+              {{ days }}d
+            {%- endif -%}
+            {%- if hours > 0 -%}
+              {%- if days > 0 -%}
+                {{ ' ' }}
+              {%- endif -%}
+              {{ hours }}h
+            {%- endif -%}
+            {%- if minutes > 0 -%}
+              {%- if days > 0 or hours > 0 -%}
+                {{ ' ' }}
+              {%- endif -%}
+              {{ minutes }}m
+            {%- endif -%}
+          {%- endif -%}
+automation:
+  - id: no_electricity
+    alias: No electricity
+    trigger:
+    - platform: state
+      entity_id: sensor.nut_ups_status_data
+    action:
+      service: notify.mobile_app_nat_mi9t
+      data:
+        message: >-
+          Ups is {{ trigger.to_state }}. Time remaining until network shutdown: {{
+          states("sensor.nut_ups_runtime_friendly") }}
+        title: UPS {{ trigger.to_state }}

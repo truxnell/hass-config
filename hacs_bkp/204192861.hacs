@@ -1,0 +1,66 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/204192861.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@Limych"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "dev",
+        "description": "Average Sensor for Home Assistant",
+        "domain": "average",
+        "domains": [
+            "sensor"
+        ],
+        "downloads": 37,
+        "etag_repository": "W/\"0a6fd82c3d289c51f57e649756ac58882e9b49b2ec64a737905bf89ee23f8679\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "Limych/ha-average",
+        "hacs": "1.6.0",
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "0.118.0",
+        "id": "204192861",
+        "iot_class": "Assumed State",
+        "installed": true,
+        "installed_commit": "8a7686f",
+        "installed_version": "2.2.0",
+        "open_issues": 16,
+        "last_commit": "a106074",
+        "last_version": "2.2.1",
+        "last_updated": "2022-01-31T01:26:06Z",
+        "manifest_name": "Average Sensor",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-01-31T01:26:06",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "2.2.1",
+            "2.2.0",
+            "2.1.0",
+            "2.0.2",
+            "2.0.1"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 157,
+        "topics": [
+            "average",
+            "hacs",
+            "home-assistant",
+            "home-assistant-component",
+            "home-assistant-sensor",
+            "sensor"
+        ],
+        "zip_release": false
+    }
+}

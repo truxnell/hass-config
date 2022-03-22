@@ -1,0 +1,41 @@
+---
+##
+## Adaptive Lighting configuration
+##
+
+# More info
+# https://github.com/basnijholt/adaptive-lighting
+
+
+sensor:
+# One entry for each beacon you want to track
+  - platform: mqtt_room
+    device_id: 'iBeacon:f844a150-11a9-439d-bfdb-499ec539bcf7-100-1'
+    # device_id: 'ibeacon-2021-11-15'
+    name: 'Nat-Phone-Mi9T-BLE'
+    state_topic: 'espresense/rooms'
+    # timeout: 60
+    away_timeout: 120
+
+  - platform: template
+    sensors:
+      presence_connection:
+        friendly_name: ESPresense Hubs Connected
+        value_template: >-
+          {{ states|selectattr('entity_id','in',state_attr('group.presence_connection','entity_id'))|selectattr('state','eq','on')|list|count }}/{{ state_attr('group.presence_connection','entity_id')|count }}
+        icon_template: >-
+          {% if ((states|selectattr('entity_id','in',state_attr('group.presence_connection','entity_id'))|selectattr('state','eq','on')|list|count) == (state_attr('group.presence_connection','entity_id')|count)) %}
+            mdi:server-network
+          {% else %}
+            mdi:server-network-off
+          {% endif %}
+
+binary_sensor:
+# One entry per sensor node
+  - platform: mqtt
+    name: Study Mqtt Room
+    state_topic: espresense/rooms/study/status
+    json_attributes_topic: espresense/rooms/study/telemetry
+    payload_on: online
+    payload_off: offline
+    device_class: connectivity

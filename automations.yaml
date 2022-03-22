@@ -1,1 +1,31 @@
-[]
+- id: '1636878901906'
+  alias: Study Lights Test
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.nat_phone_mi9t_ble
+    to: study
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.study_lights
+  mode: restart
+- id: '1636878999375'
+  alias: Study lights off
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.nat_phone_mi9t_ble
+    from: study
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id: light.study_lights
+  mode: single
